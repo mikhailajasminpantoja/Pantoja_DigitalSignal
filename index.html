@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Encoder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Signal Encoder</h1>
+    <div class="input-container">
+      <label for="binaryInput">Enter Binary Signal:</label>
+      <input type="text" id="binaryInput" placeholder="e.g., 10110" />
+        <label>Starting Level:</label>
+        <div>
+          <input type="radio" id="startHigh" name="startLevel" value="high" checked />
+          <label for="startHigh">Start High</label>
+          <br>
+          <input type="radio" id="startLow" name="startLevel" value="low" />
+          <label for="startLow">Start Low</label>
+        </div>
+    </div>
+    
+    <button id="encodeButton">Encode</button>
+    <button id="generateButton">Generate Random Binary</button>
+    <div id="signalsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
